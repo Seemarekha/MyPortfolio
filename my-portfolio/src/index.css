@@ -39,4 +39,15 @@ body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
+
+  .reveal {
+    opacity: 0;
+    transform: translate(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
